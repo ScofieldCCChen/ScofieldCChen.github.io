@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ScofieldCCChen/Ass2Final/main/months_flights.csv"
+  },
+  "background": "#f5efaa00",
+  "width": 550,
+  "height": 250,
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": false,
+      "fill": "white"
+    }
+  },
+  "encoding": {
+    "x": {
+      "timeUnit": "month",
+      "field": "month",
+      "title": "Month"
+    },
+    "y": {
+      "field": "flights",
+      "type": "quantitative",
+      "title": "Flights",
+      "axis": {
+        "tickCount": 4
+      }
+    },
+    "tooltip": [
+      {
+        "field": "month",
+        "type": "temporal",
+        "timeUnit": "month",
+        "title": "Month"
+      },
+      {
+        "field": "flights",
+        "type": "quantitative",
+        "title": "Monthly Total Flights",
+        "format": ","
+      }
+    ]
+  },
+  "config": {}
+}
