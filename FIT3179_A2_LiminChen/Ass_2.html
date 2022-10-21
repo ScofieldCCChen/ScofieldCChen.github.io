@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+    integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+  <link rel="stylesheet" href="layout.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <script src="vega_lite_vis.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="page">
+
+    <!-- title -->
+    <div class="title">
+      <h1>FIT3179 Assignment2 Vega-lite Visualisation</h1>
+      <h1>Mapping Airports In the United States In 2008</h1>
+      <p><span class="bold_small_text">America's air traffic system</span> is made up of hundreds of rich connections,
+        from large airports to small ones.
+        <span class="bold_small_text">Based on the data of 2008</span>, the visualization will visualize the
+        airport and
+        connection system through the
+        following
+        graphic types, such as map, line chart, bar chart, heat map, etc. In particular, the <span
+          class="bold_small_text">airport of origin and the
+          number of
+          flights</span> will have a map map. And other data will be visually displayed by other appropriate
+        visualizations
+      </p>
+
+    </div>
+    <hr>
+
+    <!-- map  -->
+    <div class="pure-g">
+
+      <div class="pure-u-1">
+        <h3>The American original air traffic system</h3>
+      </div>
+      <div class="pure-u-1">
+        <div class="center_vis">
+          <div id="map_vis1">
+          </div>
+        </div>
+        <div class="center_vis">
+          <div class="center-small-text">
+            <p>
+              Note: State Selection includes only the top 10 most population states.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- linechart monthly -->
+    <div class="pure-g">
+
+      <div class="pure-u-1">
+        <h3>Total Monthly Total Flights</h3>
+      </div>
+
+      <div class="pure-u-2-3">
+        <div id="linechart_v4">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- barchart -->
+    <div class="pure-g">
+
+      <div class="pure-u-1">
+        <h3>Originating Airports Flights by States</h3>
+      </div>
+
+      <div class="pure-u-1">
+        <div class="center_vis">
+          <div id="barchart_v2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- heatmap -->
+    <div class="pure-g">
+
+      <div class="pure-u-1">
+        <h3>The Top 20 Connections with the Most Flights</h3>
+      </div>
+
+      <div class="pure-u-2-3">
+        <div id="heatmap_v3">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- small text on the bottom -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>This visualisation is created by Limin
+          Chen(Scofield)</a>.
+          The
+          datasource is referenced by<a href="https://vega.github.io/vega/tutorials/airports/#meet-the-data">USA -
+            Airports </a>
+          and <a href="https://www.kaggle.com/flashgordon/usa-airport-dataset/version/2">Flights-US (kaggle)</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
